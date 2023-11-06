@@ -2,7 +2,7 @@ package main
 
 import (
 	"go-rest-api/controller"
-	"go-rest-api/db"
+	"go-rest-api/migrate/db"
 	"go-rest-api/repository"
 	"go-rest-api/router"
 	"go-rest-api/usecase"
@@ -17,5 +17,5 @@ func main() {
 	userController := controller.NewUserController(userUsecase)
 
 	e := router.NewRouter(userController)
-	e.Logger.Fatal(e.Start(":4000"))
+	e.Logger.Fatal(e.Start(":8080"))
 }

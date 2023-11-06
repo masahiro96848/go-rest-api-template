@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-rest-api/db"
+	"go-rest-api/migrate/db"
 	"go-rest-api/model"
 )
 
